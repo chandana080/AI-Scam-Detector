@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Scam Detector | ScamShield</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">🛡️ ScamShield</div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#performance">Model Performance</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+
+            <div class="badge">
+                AI-POWERED SECURITY
+            </div>
+
+            <h1>
+                Detect scams<br>
+                <span>before they hurt.</span>
+            </h1>
+
+            <p>
+                Paste a suspicious message and let ScamShield
+                analyze its potential risk using machine learning.
+            </p>
+
+        </section>
+
+        <!-- Message Detector -->
+        <section class="detector">
+
+            <label for="message">
+                Paste your message
+            </label>
+
+            <textarea
+                id="message"
+                placeholder="Example: Congratulations! You have won a prize. Click here..."
+            ></textarea>
+
+            <button onclick="checkMessage()">
+                ANALYZE MESSAGE →
+            </button>
+
+            <div id="result"></div>
+
+        </section>
+
+        <!-- Features -->
+        <section class="features" id="how-it-works">
+
+            <div>
+                <h3>⚡ Fast</h3>
+                <p>Analyze messages in seconds.</p>
+            </div>
+
+            <div>
+                <h3>🧠 Machine Learning</h3>
+                <p>Identify patterns associated with spam messages.</p>
+            </div>
+
+            <div>
+                <h3>🔒 Privacy</h3>
+                <p>Messages are processed by the connected backend for analysis.</p>
+            </div>
+
+        </section>
+
+        <!-- How It Works -->
+        <section class="performance-section how-it-works-section">
+
+            <h2>How It Works</h2>
+
+            <p class="performance-description">
+                ScamShield uses machine learning to classify text messages.
+            </p>
+
+            <div class="performance-grid">
+
+                <div class="metric-card">
+                    <h3>01</h3>
+                    <p>Message Input</p>
+                </div>
+
+                <div class="metric-card">
+                    <h3>02</h3>
+                    <p>TF-IDF Text Processing</p>
+                </div>
+
+                <div class="metric-card">
+                    <h3>03</h3>
+                    <p>Logistic Regression Prediction</p>
+                </div>
+
+            </div>
+
+            <p class="performance-note">
+                The model processes the message, predicts whether it
+                resembles spam, and returns a result with a confidence score.
+            </p>
+
+        </section>
+
+        <!-- Model Performance -->
+        <section class="performance-section" id="performance">
+
+            <h2>Model Performance</h2>
+
+            <p class="performance-description">
+                Evaluation results measured on the test dataset.
+            </p>
+
+            <div class="performance-grid">
+
+                <div class="metric-card">
+                    <h3>97.67%</h3>
+                    <p>Accuracy</p>
+                </div>
+
+                <div class="metric-card">
+                    <h3>90%</h3>
+                    <p>Spam Precision</p>
+                </div>
+
+                <div class="metric-card">
+                    <h3>93%</h3>
+                    <p>Spam Recall</p>
+                </div>
+
+            </div>
+
+            <p class="performance-note">
+                These metrics describe performance on the test dataset.
+                Predictions on new messages may be incorrect.
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        ScamShield • AI Scam Detection
+    </footer>
+
+    <script src="script.js"></script>
+<!-- Model Performance Section -->
+<section class="performance-section" id="performance">
+    <h2>Model Performance</h2>
+
+    <p class="performance-description">
+        Evaluation results measured on the test dataset.
+    </p>
+
+    <div class="performance-grid">
+        <div class="metric-card">
+            <h3>97.67%</h3>
+            <p>Accuracy</p>
+        </div>
+
+        <div class="metric-card">
+            <h3>90%</h3>
+            <p>Spam Precision</p>
+        </div>
+
+        <div class="metric-card">
+            <h3>93%</h3>
+            <p>Spam Recall</p>
+        </div>
+    </div>
+
+    <p class="performance-note">
+        These metrics describe performance on the test dataset.
+        Predictions on new messages may be incorrect.
+    </p>
+</section>
+</body>
+
+</html>
